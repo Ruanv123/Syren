@@ -13,14 +13,44 @@ html {
   box-sizing: border-box;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+}
+
 /* variaveis */
 :root {
-  --header-color: 1D1D1F;
+  --header-color: #1D1D1F;
   --font-color: ;
+  --container: 1000px;
 }
 
 header {
   background-color: var(--header-color);
+  width: 100%;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
