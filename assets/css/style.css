@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 980px;
+}
+
 .header {
   width: 100%;
   position: fixed;
