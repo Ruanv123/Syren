@@ -4,3 +4,16 @@ $(document).ready(function () {
         $(".nav-list-mobile").toggleClass("active");
     });
 });
+
+/* carrinho dropdown */
+(function () {
+    $(".cart").on("click", function () {
+        $(".shopping-cart").fadeToggle("fast");
+    });
+})();
+
+var contagem = document.getElementsByClassName('clearfix').length;
+
+var valor = document.querySelectorAll('.badge');
+
+contagem.textContent = valor;
