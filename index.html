@@ -8,110 +8,274 @@
     <!-- icon -->
     <link rel=" icon" href="assets/imgs/logo.svg" type="image/icon">
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- titulo -->
     <title>Syren (Brasil)</title>
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- css default -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container">
-            <!-- desktop menu -->
-            <ul class="nav-list-desktop">
-                <li class="nav-item" style="padding-left: 10px;">
-                    <a href="#" class="">
-                        <img src="assets/imgs/logo.svg" class="logo" style="width: 20px;" />
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Placas de Video</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Processadores</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">hardware</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Periféricos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Acessórios</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Suporte</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="">
-                        <img src="assets/imgs/search_1.svg" style="width: 20px;" />
-                    </a>
-                </li>
-                <li class="nav-item" style="padding-right: 10px;">
-                    <a href="#">
-                        <img class="cart" src="assets/imgs/bag_1.svg" style="width: 20px;" />
-                    </a>
-                </li>
-            </ul>
-
-            <!-- mobile menu -->
-            <ul class="nav-mobile">
-                <li class="nav-item" style="padding-left: 10px">
-                    <a href="#" class="nav-hamburguer">
-                        <div class="hamburguer hamburguer-active"></div>
-                    </a>
-                </li>
-                <li class="nav-item" style="z-index: 999;">
-                    <a href="#" class="logo">
-                        <img src="assets/imgs/logo.svg" class="logo" style="width: 20px;">
-                    </a>
-                </li>
-                <li class="nav-item" style="padding-right: 10px;">
-                    <a href="#" class="nav-bag">
-                        <img class="cart" src="assets/imgs/bag_1.svg" style="width: 20px;">
-                    </a>
-                </li>
-            </ul>
-            <!-- nav itens mobile -->
-            <ul class="nav-list-mobile active">
-                <li class="nav-item-mobile">
-                    <input type="text" class="search" placeholder="Search" id="">
-                </li>
-                <li class="nav-item-mobile">
-                    <a href="#" class="nav-link-mobile">Placas de Video</a>
-                </li>
-                <li class="nav-item-mobile">
-                    <a href="#" class="nav-link-mobile">Processadores</a>
-                </li>
-                <li class="nav-item-mobile">
-                    <a href="#" class="nav-link-mobile">hardware</a>
-                </li>
-                <li class="nav-item-mobile">
-                    <a href="#" class="nav-link-mobile">Periféricos</a>
-                </li>
-                <li class="nav-item-mobile">
-                    <a href="#" class="nav-link-mobile">Acessórios</a>
-                </li>
-                <li class="nav-item-mobile">
-                    <a href="#" class="nav-link-mobile">Suporte</a>
-                </li>
-            </ul>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul class="mobile-nav">
+                    <li>
+                        <div class="menu-icon-container">
+                            <div class="menu-icon">
+                                <span class="line-1"></span>
+                                <span class="line-2"></span>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="link-logo"></a>
+                    </li>
+    
+                    <li>
+                        <a href="" class="link-bag"></a>
+                    </li>
+                </ul>
+    
+                <ul class="desktop-nav">
+                    <li>
+                        <a href="#" class="link-logo"></a>
+                    </li>
+                    <li>
+                        <a href="#">Placa de Vídeo</a>
+                    </li>
+                    <li>
+                        <a href="#">Processadores</a>
+                    </li>
+                    <li>
+                        <a href="#">hardware</a>
+                    </li>
+                    <li>
+                        <a href="#">Periféricos</a>
+                    </li>
+                    <li>
+                        <a href="#">Acessórios</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-search"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-bag"></a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- End of navigation menu items -->
+    
+            <div class="search-container hide">
+                <div class="link-search"></div>
+                <div class="search-bar">
+                    <form action="">
+                        <input type="text" placeholder="Search syren.com">
+                    </form>
+                </div>
+                <div class="link-close"></div>
+    
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>
+                            <a href="#">Visiting an Syren Store FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop Syren products Online</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">Air Mouses</a>
+                        </li>
+                        <li>
+                            <a href="#">Air Keyboards</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <div class="mobile-search-container">
+                <div class="link-search"></div>
+                <div class="search-bar">
+                    <form action="">
+                        <input type="text" placeholder="Search syren.com">
+                    </form>
+                </div>
+                <span class="cancel-btn">Cancel</span>
+    
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li>
+                            <a href="#">Visiting an Syren Store FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop Syren products Online</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">Air Mouses</a>
+                        </li>
+                        <li>
+                            <a href="#">Air Keyboards</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+    
         </div>
-
+    
+    
+        <div class="overlay"></div>
     </header>
 
     <main>
-    
+        <div class="section-header">
+            <h1>Royal</h1>
+            <h3>Leve. Preciso. Sem Fio.</h3>
+            <div class="flex">
+                <a href="#">Comprar</a> <!-- <i class="ri-arrow-right-s-line"></i> -->
+                <a href="#">Ver mais</a>
+            </div>
+        </div>
+        
+        <div class="mini-carrousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <figure>
+                                <img src="assets/imgs/monitor 2.png" alt="">
+                            </figure>
+                            <div class="text-card">
+                                <h1>Monitor Benq 240hz Dyac</h1>
+                                <p>12x sem juros no cartao de credito</p>
+                                <h4><strong>$2499,99</strong></h4>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <figure>
+                            <img src="assets/imgs/monitor 2.png" alt="">
+                        </figure>
+                        <div class="text-card">
+                            <h1>Monitor Benq 240hz Dyac</h1>
+                            <p>12x sem juros no cartao de credito</p>
+                            <h4><strong>$2499,99</strong></h4>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
     </main>
 
+    <footer>
 
-    <!-- jquey -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    </footer>
     <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- main js -->
     <script src="assets/js/index.js"></script>
 </body>
 
