@@ -626,11 +626,8 @@ a {
 .mini-carrousel {
   margin-top: 5vh;
 }
-.mini-carrousel .swiper-wrapper .swiper-slide {
-  width: 100%;
-}
-
 .card {
+  padding: 15px;
   overflow: hidden;
   background-color: var(--card-bg);
   border-radius: 1rem;
@@ -638,6 +635,7 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  width: 250px;
 }
 .card .text-card h1 {
   color: #fff;
@@ -663,6 +661,9 @@ a {
 @media screen and (max-width: 500px) {
   .section-header h3 {
     font-size: 1.5rem;
+  }
+  .swiper-slide {
+    padding: 10px;
   }
 }
 
