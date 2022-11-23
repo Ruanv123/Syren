@@ -88,8 +88,8 @@ function labelDrop() {
     if (input.value == "") {
         label.classList.remove("lblFocused")
         clearBtn.classList.add("disabled")
-        
-        
+
+
     }
 }
 function clear() {
@@ -101,4 +101,10 @@ function clear() {
 input.addEventListener('focusin', labelUp);
 input.addEventListener('focusout', labelDrop);
 clearBtn.addEventListener('click', clear)
+input.addEventListener('keyup', rrfx)
 
+function rrfx() {
+    if (label.classList.contains("lblFocused") == 0) {
+        labelUp()
+    }
+}

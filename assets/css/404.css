@@ -687,6 +687,7 @@ main {
 }
 
 /* ========== fOOTER ========== */
+/* footer */
 footer {
   margin: 0 auto;
   max-width: 980px;
@@ -696,7 +697,7 @@ footer {
   border-top: 1px solid #d2d2d7;
 }
 footer .content .bread {
-  max-width: 120px;
+  max-width: 250px;
   display: flex;
   justify-content: space-between;
   padding: 17px 0px;
@@ -876,6 +877,18 @@ footer .content .footer-final .mini-footer-legal span {
 @media screen and (max-width: 990px) {
   .list-drop {
     margin: 10px;
+  }
+}
+@media screen and (max-width: 735px) {
+  #errorWarning {
+    margin-bottom: 60px;
+  }
+  #contentWarning h1 {
+    font-size: 22px;
+    max-width: 80vw;
+  }
+  #searchError {
+    width: 80vw;
   }
 }
 @media screen and (max-width: 500px) {
